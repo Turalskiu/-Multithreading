@@ -96,7 +96,7 @@ namespace Multithreading
                     Monitor.Exit(_syncRoot); 
                 }
 
-                //ждем пока завершаться все потоки
+                //ждем пока прихлопнутся все потоки
                 if (isDisposing)
                 {
                     for(int i = 0; i < _threads.Length; i++)
